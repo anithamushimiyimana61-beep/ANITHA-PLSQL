@@ -1,5 +1,5 @@
 
-#  PL/SQL Collections and Records Demonstration: Student Enrollment and Grading System
+#  PL/SQL Collections and Records GOTO Demonstration
 
 Anitha Mushimiyimana (ID: 27383)
 
@@ -90,50 +90,8 @@ The core functionality is encapsulated within the **`GRADING_SYSTEM`** package.
 
 ---
 
-##  Execution Instructions
-
-Follow these steps in your Oracle SQL environment (SQL*Plus, SQL Developer, etc.) to set up and run the demonstration:
-
-1.  **Create Database Objects & Data:**
-    ```sql
-    @01_DATABASE_SETUP.sql
-    ```
-2.  **Compile Package Specification:**
-    ```sql
-    @02_PACKAGE_SPECIFICATION.sql
-    ```
-3.  **Compile Package Body:**
-    ```sql
-    @03_PACKAGE_BODY.sql
-    ```
-4.  **Run Main Demonstration:**
-    ```sql
-    SET SERVEROUTPUT ON SIZE 1000000;
-    @04_MAIN_DEMONSTRATION.sql
-    ```
-
-###  Expected Output
-
-Successful execution will show:
-
-* Structured output detailing the contents of the VARRAY, Nested Table, and Associative Array.
-* Clear demonstration of the **GOTO** logic, printing the assigned grade and alert message for various scores.
-* A fully detailed **Student Transcript** showing how records and nested collections interact.
-* Verification that the `GRADING_SYSTEM` package compiled successfully with status **VALID**.
-
 ---
 
-##  Alignment with Course Topics
-
-| Lecture Topic | Implementation in this Project |
-| :--- | :--- |
-| PL/SQL Collections | All 3 types (VARRAY, Nested Table, Associative Array) implemented |
-| Records |  User-defined, Table-based, and Records with Collections utilized |
-| GOTO Statements |  Used for structured routing in grading logic and exception jumps |
-| Composite Data Types |  Student Transcript and Grade Analysis Records designed |
-| Real-world Application | Functional Student Enrollment and Grading System |
-
----
 
 ##  Conclusion
 
