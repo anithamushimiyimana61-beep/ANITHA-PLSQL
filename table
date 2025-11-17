@@ -1,0 +1,24 @@
+-- Table: DEPARTMENTS
+
+CREATE TABLE departments (
+    department_id   NUMBER PRIMARY KEY,
+    department_name VARCHAR2(100) NOT NULL
+);
+
+
+-- Table: EMPLOYEES
+
+CREATE TABLE employees (
+    employee_id     NUMBER PRIMARY KEY,
+    first_name      VARCHAR2(50) NOT NULL,
+    last_name       VARCHAR2(50) NOT NULL,
+    department_id   NUMBER NOT NULL,
+    salary          NUMBER,
+    CONSTRAINT fk_department FOREIGN KEY (department_id)
+        REFERENCES departments(department_id)
+);
+
+
+-- End of create_tables.sql
+
+COMMIT;
